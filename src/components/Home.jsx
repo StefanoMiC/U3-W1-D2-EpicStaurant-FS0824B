@@ -15,6 +15,7 @@ class Home extends Component {
     console.log("RENDER");
     return (
       <Container fluid="md" className="mt-5">
+        {/* short circuit operator - blocca la renderizzazione del codice alla destra del && se il valore a sinistra è falsy */}
         {this.state.selectedPasta && <Alert variant="info">Pasta selezionata</Alert>}
         <Row className="justify-content-center">
           <Col xs={10} md={8} xl={6}>
